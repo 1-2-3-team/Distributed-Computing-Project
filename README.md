@@ -9,7 +9,6 @@ The main objective of the project is to analyze the concurrence of tweets relate
 
 Toolset:
 
-- [Ubuntu](https://ubuntu.com/)
 - [NumPy](https://numpy.org/)
 - [Pandas](https://pandas.pydata.org/)
 - [Tweepy](https://github.com/tweepy/tweepy)
