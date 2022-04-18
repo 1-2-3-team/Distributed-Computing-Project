@@ -1,11 +1,11 @@
 <h1 align="center" style="color:red;"> Distributed Computing Project</h1>
 
-Equipo 1,2,3
+# Equipo 1,2,3
 
-#Integrantes:
--Sofia De La Rosa
--Ana Paola (Agregar apellido)
--Luis Yovanny Bedolla Galvan
+# Integrantes:
+- Sofia De La Rosa
+- Ana Paola (Agregar apellido)
+- Luis Yovanny Bedolla Galvan
 
 
 ## Introduction
