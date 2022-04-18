@@ -3,7 +3,7 @@
 # Equipo 1,2,3
 
 # Integrantes:
-- Sofia De La Rosa
+- Sofia De La Rosa <@SofiaDeLaRosa>
 - Ana Paola Carreón Hernández
 - Luis Yovanny Bedolla Galvan
 
