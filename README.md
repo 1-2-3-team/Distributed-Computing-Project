@@ -6,3 +6,14 @@ Twitter is a social networking service where there are no limits or censorship a
 ## General Objective
 The main objective of the project is to analyze the concurrence of tweets related to the cancel culture and to visually represent its changes over time, taking into account factors such as censorship that directly threatens freedom of expression, changes in the terms of the platform or even changes in the direction of the platform.
 
+
+Toolset:
+
+Ubuntu: [https://ubuntu.com/]
+NumPy: [https://numpy.org/]
+Pandas: [https://pandas.pydata.org/]
+Tweepy: [https://github.com/tweepy/tweepy]
+Twint: [https://github.com/twintproject/twint]
+Apache: [https://httpd.apache.org/]
+Amazon Web Services: []
+Twarc2: [https://twarc-project.readthedocs.io/en/latest/twarc2_en_us/]
