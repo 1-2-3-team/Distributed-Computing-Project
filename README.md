@@ -17,7 +17,7 @@ In this case, the main subject, the object to study is the “cancel culture” 
 The main objective of the project is to analyze the concurrence of tweets related to the cancel culture and compare each iteration with its predecessor to see the change over time, taking into account factors such as censorship that directly threatens freedom of expression, changes in the terms of the platform or even changes in the direction of the platform. 
 
 
-## Dependencies: 
+## Toolset:
 
 - [NumPy](https://numpy.org/)
 
