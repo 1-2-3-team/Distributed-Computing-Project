@@ -9,10 +9,10 @@ The main objective of the project is to analyze the concurrence of tweets relate
 
 Toolset:
 
-[Ubuntu](https://ubuntu.com/)
-[NumPy](https://numpy.org/)
-[Pandas](https://pandas.pydata.org/)
-[Tweepy](https://github.com/tweepy/tweepy)
-[Twint](https://github.com/twintproject/twint)
-[Apache](https://httpd.apache.org/)
-[Twarc2](https://twarc-project.readthedocs.io/en/latest/twarc2_en_us/)
+- [Ubuntu](https://ubuntu.com/)
+- [NumPy](https://numpy.org/)
+- [Pandas](https://pandas.pydata.org/)
+- [Tweepy](https://github.com/tweepy/tweepy)
+- [Twint](https://github.com/twintproject/twint)
+- [Apache](https://httpd.apache.org/)
+- [Twarc2](https://twarc-project.readthedocs.io/en/latest/twarc2_en_us/)
