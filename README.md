@@ -3,9 +3,9 @@
 # Equipo 1,2,3
 
 # Integrantes:
-- Sofia De La Rosa <@SofiaDeLaRosa>
-- Ana Paola Carreón Hernández
-- Luis Yovanny Bedolla Galvan
+- [Sofia De La Rosa](https://github.com/SofiaDeLaRosa)
+- [Ana Paola Carreón Hernández](https://github.com/Mordran)
+- [Luis Yovanny Bedolla Galvan](https://github.com/GalvanLuis)
 
 
 ## Introduction
