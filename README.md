@@ -1,5 +1,13 @@
 <h1 align="center" style="color:red;"> Distributed Computing Project</h1>
 
+Equipo 1,2,3
+
+Integrantes:
+-Sofia De La Rosa
+-Ana Paola (Agregar apellido)
+-Luis Yovanny Bedolla Galvan
+
+
 ## Introduction
 Twitter is a social networking service where there are no limits or censorship at the time of sharing and posting in exchange for that liberty Twitter can be used as a tool that shows collective behaviors and significant social functions that have been studied in the fields of semiotic communication, the social construction of information and knowledge and other collective phenomena.
 
