@@ -4,7 +4,7 @@
 
 # Integrantes:
 - Sofia De La Rosa
-- Ana Paola (Agregar apellido)
+- Ana Paola Carreón Hernández
 - Luis Yovanny Bedolla Galvan
 
 
