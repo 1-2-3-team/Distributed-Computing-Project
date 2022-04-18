@@ -2,7 +2,7 @@
 
 Equipo 1,2,3
 
-Integrantes:
+#Integrantes:
 -Sofia De La Rosa
 -Ana Paola (Agregar apellido)
 -Luis Yovanny Bedolla Galvan
