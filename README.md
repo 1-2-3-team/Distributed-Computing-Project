@@ -14,7 +14,7 @@ Twitter is a social networking service where there are no limits or censorship a
 In this case, the main subject, the object to study is the “cancel culture” defined as a way to restricts the freedom of speech and which is one of the reasons for calling Twitter one of the most toxic social networks; exposing the amount of it is a start for more visibility and awareness the society to take more in serious this problematic and this kind of culture.
 
 ## Objectives
-The main objective of the project is to analyze the concurrence of tweets related to the cancel culture and compare each iteration with its predecessor to see the change over time, taking into account factors such as censorship that directly threatens freedom of expression, changes in the terms of the platform or even changes in the direction of the platform. 
+The aim of this project is to analyze the concurrence of tweets related to the cancel culture and compare each iteration with its predecessor to see the change over time, taking into account factors such as censorship that directly threatens freedom of expression, changes in the terms of the platform or even changes in the direction of the platform. 
 
 
 ## Toolset:
