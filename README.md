@@ -1,5 +1,7 @@
 <h1 align="center" style="color:red;"> Distributed Computing Project</h1>
 
+Final project for the Dynamic Systems 2022-2 class, taught by "[Dr. Victor de la Luz](https://github.com/itztli)" "[vdelaluz@enesmorelia.unam.mx ](vdelaluz@enesmorelia.unam.mx)" at “[Universidad Nacional Autónoma de México](https://www.unam.mx/)”, in its "[Escuela Nacional de Estudios Superiores, Unidad Morelia](https://www.enesmorelia.unam.mx/)”.
+
 # Equipo 1,2,3
 
 # Team Members:
