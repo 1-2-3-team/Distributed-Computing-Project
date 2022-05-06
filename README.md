@@ -1,13 +1,13 @@
 <h1 align="center" style="color:red;"> Distributed Computing Project</h1>
 
-Final project for the Dynamic Systems 2022-2 class, taught by "[Dr. Victor de la Luz](https://github.com/itztli)" "[vdelaluz@enesmorelia.unam.mx ](vdelaluz@enesmorelia.unam.mx)" at “[Universidad Nacional Autónoma de México](https://www.unam.mx/)”, in its "[Escuela Nacional de Estudios Superiores, Unidad Morelia](https://www.enesmorelia.unam.mx/)”.
+Final project of the Dynamic Systems 2022-2 class, taught by [Dr. Victor de la Luz](https://github.com/itztli) [vdelaluz@enesmorelia.unam.mx](vdelaluz@enesmorelia.unam.mx) and Dr. Héctor Guzmán [hguzman@enesmorelia.unam.mx](hguzman@enesmorelia.unam.mx) at *[Universidad Nacional Autónoma de México](https://www.unam.mx/)* (National Autonomous University of Mexico|UNAM) [http://www.gicc.unam.mx/](http://www.gicc.unam.mx/), in its *[Escuela Nacional de Estudios Superiores, Unidad Morelia](https://www.enesmorelia.unam.mx/)* (National School of Superior-Level Studies, *Morelia* Campus|ENES).
 
 # Equipo 1,2,3
 
 # Team Members:
-- [Sofia De La Rosa](https://github.com/SofiaDeLaRosa)
-- [Ana Paola Carreón Hernández](https://github.com/Mordran)
-- [Luis Yovanny Bedolla Galvan](https://github.com/GalvanLuis)
+- [Sofia De La Rosa](https://github.com/SofiaDeLaRosa) [chapatulita @gmail.com](chapatulita @gmail.com)
+- [Ana Paola Carreón Hernández](https://github.com/Mordran) [anabananaapch@gmail.com](anabananaapch@gmail.com)
+- [Luis Yovanny Bedolla Galvan](https://github.com/GalvanLuis) [gruisu93@gmail.com](gruisu93@gmail.com)
 
 
 ## Introduction
