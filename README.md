@@ -5,7 +5,7 @@ Final project of the Dynamic Systems 2022-2 class, taught by [Dr. Victor de la L
 # Equipo 1,2,3
 
 # Team Members:
-- [Sofia De La Rosa](https://github.com/SofiaDeLaRosa) ([chapatulita@gmail.com](chapatulita @gmail.com))
+- [Sofia De La Rosa](https://github.com/SofiaDeLaRosa) ([chapatulita@gmail.com](chapatulita@gmail.com))
 - [Ana Paola Carreón Hernández](https://github.com/Mordran) ([anabananaapch@gmail.com](anabananaapch@gmail.com))
 - [Luis Yovanny Bedolla Galvan](https://github.com/GalvanLuis) ([gruisu93@gmail.com](gruisu93@gmail.com))
 
