@@ -11,7 +11,7 @@ Final project of the Distributed Computing 2022-2 class, taught by [Dr. Victor d
 
 
 ## Introduction
-Twitter is a social networking service where there are no limits or censorship at the time of sharing and posting in exchange for that liberty Twitter can be used as a tool that shows collective behaviors and significant social functions that have been studied in the fields of semiotic communication, the social construction of information and knowledge and other collective phenomena.
+[Twitter](https://es.wikipedia.org/wiki/Twitter) is a social networking service where there are no limits or censorship at the time of sharing and posting in exchange for that liberty Twitter can be used as a tool that shows collective behaviors and significant social functions that have been studied in the fields of semiotic communication, the social construction of information and knowledge and other collective phenomena.
 
 In this case, the main subject, the object to study is the “[cancel culture](https://en.wikipedia.org/wiki/Cancel_culture)” defined as a way to restricts the freedom of speech and which is one of the reasons for calling Twitter one of the most toxic social networks; exposing the amount of it is a start for more visibility and awareness the society to take more in serious this problematic and this kind of culture.
 
