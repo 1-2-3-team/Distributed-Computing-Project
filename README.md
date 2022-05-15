@@ -6,7 +6,7 @@ Final project of the Distributed Computing 2022-2 class, taught by [Dr. Victor d
 
 # Team Members:
 - [Sofia De La Rosa](https://github.com/SofiaDeLaRosa) (<chapatulita@gmail.com>)
-- [Ana Paola Carreón Hernández](https://github.com/Mordran) (<anabananaapch@gmail.com>)
+- [Ana Paola Carreón Hernández](https://github.com/Mordran) (<anapcahe@gmail.com>)
 - [Luis Yovanny Bedolla Galvan](https://github.com/GalvanLuis) (<gruisu93@gmail.com>)
 
 
