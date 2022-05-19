@@ -1,0 +1,5 @@
+CREATE TABLE tweets(
+    id int(),
+    tweet varchar(281),
+    fecha timestamp
+);
