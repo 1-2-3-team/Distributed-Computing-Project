@@ -28,6 +28,7 @@ wnegative = int(new_query[4])
 snegative = int(new_query[5])
 neutral = int(new_query[6])
 searchTerm = str(new_query[8])
+date = str(new_query[7])
 
 y = np.array([positive, wpositive, spositive,negative, wnegative, snegative, neutral])
 labels = ['Positive [' + str(positive) + '%]', 'Weakly Positive [' + str(wpositive) + '%]','Strongly Positive [' + str(spositive) + '%]', 'Neutral [' + str(neutral) + '%]', 'Negative [' + str(negative) + '%]', 'Weakly Negative [' + str(wnegative) + '%]', 'Strongly Negative [' + str(snegative) + '%]']
@@ -35,7 +36,7 @@ sizes = [positive, wpositive, spositive, neutral, negative, wnegative, snegative
 colors = ['yellowgreen','lightgreen','darkgreen', 'blue', 'red','lightsalmon','darkred']
 patches, texts = plt.pie(sizes, colors=colors, startangle=90)
 plt.legend(patches, labels, loc="best")
-plt.title('How people are reacting on ' + searchTerm + ' by analyzing Tweets.')
+plt.title('How people are reacting on ' + searchTerm + ' by analyzing Tweets at ' + date)
 plt.axis('equal')
 plt.tight_layout()
 plt.savefig('chart.png')
