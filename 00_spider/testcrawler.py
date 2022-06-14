@@ -30,7 +30,7 @@ class tweetAnalysis:
 
         # input for term to be searched and how many tweets to search
         searchTerm = "AIDS"
-        NoOfTerms = 1000
+        NoOfTerms = 100
 
         # searching for tweets
         self.tweets = tweepy.Cursor(api.search, q=searchTerm, lang = "en").items(NoOfTerms)
