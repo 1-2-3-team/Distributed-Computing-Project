@@ -162,7 +162,7 @@ class tweetAnalysis:
         plt.axis('equal')
         plt.tight_layout()
     
-    os.system('rm result.csv')
+    
   
 
 
