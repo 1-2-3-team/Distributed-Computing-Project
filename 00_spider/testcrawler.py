@@ -2,7 +2,7 @@ import sys,tweepy,csv,re,json
 from textblob import TextBlob
 import matplotlib.pyplot as plt
 import psycopg2
-import datetime
+from datetime import datetime
 
 #Establishing the connection
 conn = psycopg2.connect(
@@ -129,7 +129,7 @@ class tweetAnalysis:
         elif (polarity > -1 and polarity <= -0.6):
             print("Strongly Negative")
 
-        today = date.today()
+        today = datetime.today().strftime("%Y-%m-%d")
         #Creating a cursor object using the cursor() method
         cursor = conn.cursor()
         # Preparing SQL queries to INSERT a record into the database.
