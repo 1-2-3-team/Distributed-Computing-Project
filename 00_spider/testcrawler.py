@@ -1,4 +1,4 @@
-import sys,tweepy,csv,re,os
+import sys,tweepy,csv,re,command
 from unittest import result
 from textblob import TextBlob
 import matplotlib.pyplot as plt
@@ -168,4 +168,5 @@ class tweetAnalysis:
 if __name__== "__main__":
     sa = tweetAnalysis()
     sa.DownloadData()
-    os.remove(result.csv)
+    command.run('rm result.csv')
+
