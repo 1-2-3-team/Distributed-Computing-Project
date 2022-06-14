@@ -18,7 +18,10 @@ cur = conn.cursor()
 cur.execute("""SELECT * FROM tweets""")
 query_results = cur.fetchall()
 new_query = query_results = query_results[-1]
-print(new_query)
+#print(new_query)
+positive = int(new_query[0])
+print(positive)
+
 
 # Close the cursor and connection to so the server can allocate
 # bandwidth to other requests
