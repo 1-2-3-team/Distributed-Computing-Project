@@ -1,6 +1,7 @@
 
 import psycopg2
 from datetime import datetime
+import matplotlib as plt
 
 # Establish a connection to the database by creating a cursor object
 # The PostgreSQL server must be accessed through the PostgreSQL APP or Terminal Shell
@@ -24,14 +25,23 @@ negative = int(new_query[3])
 wnegative = int(new_query[4])
 snegative = int(new_query[5])
 neutral = int(new_query[6])
-date = datetime(new_query[7])
-print(date)
 
+new_query = new_query.pop(7)
+new_query = new_query.pop(8)
 
-# Close the cursor and connection to so the server can allocate
-# bandwidth to other requests
-cur.close()
 conn.close()
+'''
+def plotPieChart(self, positive, wpositive, spositive, negative, wnegative, snegative, neutral, searchTerm, noOfSearchTerms):
+    labels = ['Positive [' + str(positive) + '%]', 'Weakly Positive [' + str(wpositive) + '%]','Strongly Positive [' + str(spositive) + '%]', 'Neutral [' + str(neutral) + '%]',
+              'Negative [' + str(negative) + '%]', 'Weakly Negative [' + str(wnegative) + '%]', 'Strongly Negative [' + str(snegative) + '%]']
+    sizes = [positive, wpositive, spositive, neutral, negative, wnegative, snegative]
+    colors = ['yellowgreen','lightgreen','darkgreen', 'blue', 'red','lightsalmon','darkred']
+    patches, texts = plt.pie(sizes, colors=colors, startangle=90)
+    plt.legend(patches, labels, loc="best")
+    plt.title('How people are reacting on ' + searchTerm + ' by analyzing ' + str(noOfSearchTerms) + ' Tweets.')
+    plt.axis('equal')
+    plt.tight_layout()
+    plt.savefig('chart.png')'''
     
 
 #def percentage(self, part, whole):
