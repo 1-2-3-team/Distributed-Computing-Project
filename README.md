@@ -23,14 +23,9 @@ The aim of this project is to analyze the concurrence of tweets related to the c
 
 - [NumPy](https://numpy.org/)
 
-- [Pandas](https://pandas.pydata.org/)
-
 - [Tweepy](https://github.com/tweepy/tweepy)
 
-- [Twint](https://github.com/twintproject/twint)
-
-- [Twarc2](https://twarc-project.readthedocs.io/en/latest/twarc2_en_us/)
-
+- [TextBlop](https://textblob.readthedocs.io/en/dev/)
 
 
 ## References:
