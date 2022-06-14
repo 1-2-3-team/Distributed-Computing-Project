@@ -133,7 +133,7 @@ class tweetAnalysis:
         #Creating a cursor object using the cursor() method
         cursor = conn.cursor()
         # Preparing SQL queries to INSERT a record into the database.
-        cursor.execute(INSERT INTO tweets(positive, wpositive, spositive, negative, wnegative, snegative, neutral, date) VALUES (positive, wpositive, spositive, negative, wnegative, snegative, neutral, today))
+        cursor.execute("INSERT INTO tweets(positive, wpositive, spositive, negative, wnegative, snegative, neutral, date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)", (positive, wpositive, spositive, negative, wnegative, snegative, neutral, today))
         # Commit your changes in the database
         conn.commit()
         print("Records inserted........")
