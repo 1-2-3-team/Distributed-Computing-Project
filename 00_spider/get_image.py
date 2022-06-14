@@ -1,4 +1,5 @@
 import subprocess
 import os
 p = subprocess.Popen(["scp", "/data/team5/chart.png", "lbgalvan@132.247.186.67:/home/lbgalvan/public_html/static/images/"])
+html =  subprocess.Popen(["scp", "/home/lbgalvan/git/Distributed-Computing-Project/04_public_html/index.html", "/home/lbgalvan/public_html/static@132.247.186.67:/home/lbgalvan/public_html/"])
 sts = os.waitpid(p.pid, 0)
