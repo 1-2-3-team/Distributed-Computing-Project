@@ -1,6 +1,16 @@
 import sys,tweepy,csv,re,json
 from textblob import TextBlob
 import matplotlib.pyplot as plt
+import psycopg2
+import datetime
+
+#Establishing the connection
+conn = psycopg2.connect(
+   database="team5", user='team5', password='p3nt3c0st3s!', host='10.100.20.198', port= '5432'
+)
+
+#Setting auto commit false
+conn.autocommit = True
 
 class tweetAnalysis:
 
@@ -16,10 +26,10 @@ class tweetAnalysis:
         accessTokenSecret = '97icDz0hKwAcbDLDXYoObWYRPvjnUhGw0Xfy7XgL7dI6T'
         auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
         auth.set_access_token(accessToken, accessTokenSecret)
-        api = tweepy.API(auth)
+        api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
         # input for term to be searched and how many tweets to search
-        searchTerm = "#cancel"
+        searchTerm = "mierda"
         NoOfTerms = 1000
 
         # searching for tweets
@@ -118,6 +128,17 @@ class tweetAnalysis:
             print("Negative")
         elif (polarity > -1 and polarity <= -0.6):
             print("Strongly Negative")
+
+        today = date.today()
+        #Creating a cursor object using the cursor() method
+        cursor = conn.cursor()
+        # Preparing SQL queries to INSERT a record into the database.
+        cursor.execute(INSERT INTO tweets(positive, wpositive, spositive, negative, wnegative, snegative, neutral, date) VALUES (positive, wpositive, spositive, negative, wnegative, snegative, neutral, today))
+        # Commit your changes in the database
+        conn.commit()
+        print("Records inserted........")
+        # Closing the connection
+        conn.close()
 
         print()
         print("Detailed Report: ")
