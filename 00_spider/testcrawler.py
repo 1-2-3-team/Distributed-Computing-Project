@@ -1,4 +1,4 @@
-import sys,tweepy,csv,re,command
+import sys,tweepy,csv,re,os
 from unittest import result
 from textblob import TextBlob
 import matplotlib.pyplot as plt
@@ -161,6 +161,8 @@ class tweetAnalysis:
         plt.title('How people are reacting on ' + searchTerm + ' by analyzing ' + str(noOfSearchTerms) + ' Tweets.')
         plt.axis('equal')
         plt.tight_layout()
+    
+    os.system('rm result.csv')
   
 
 
@@ -168,5 +170,5 @@ class tweetAnalysis:
 if __name__== "__main__":
     sa = tweetAnalysis()
     sa.DownloadData()
-    command.run('rm result.csv')
+
 
