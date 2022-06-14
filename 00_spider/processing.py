@@ -1,7 +1,7 @@
 
 import psycopg2
 from datetime import datetime
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import numpy as np
 
 # Establish a connection to the database by creating a cursor object
