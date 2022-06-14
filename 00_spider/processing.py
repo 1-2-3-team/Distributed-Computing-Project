@@ -1,12 +1,10 @@
 
 import psycopg2
+from datetime import datetime
 
 # Establish a connection to the database by creating a cursor object
 # The PostgreSQL server must be accessed through the PostgreSQL APP or Terminal Shell
 
-# conn = psycopg2.connect("dbname=suppliers port=5432 user=postgres password=postgres")
-
-# Or:
 conn = psycopg2.connect(
    database="team5", user='team5', password='p3nt3c0st3s!', host='10.100.20.198', port= '5432'
 )
@@ -20,7 +18,14 @@ query_results = cur.fetchall()
 new_query = query_results = query_results[-1]
 #print(new_query)
 positive = int(new_query[0])
-print(positive)
+wpositive = int(new_query[1])
+spositive = int(new_query[2])
+negative = int(new_query[3])
+wnegative = int(new_query[4])
+snegative = int(new_query[5])
+neutral = int(new_query[6])
+date = datetime(new_query[7])
+print(date)
 
 
 # Close the cursor and connection to so the server can allocate
