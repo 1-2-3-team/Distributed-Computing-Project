@@ -29,7 +29,7 @@ class tweetAnalysis:
         api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
         # input for term to be searched and how many tweets to search
-        searchTerm = "mierda"
+        searchTerm = "AIDS"
         NoOfTerms = 1000
 
         # searching for tweets
@@ -133,7 +133,7 @@ class tweetAnalysis:
         #Creating a cursor object using the cursor() method
         cursor = conn.cursor()
         # Preparing SQL queries to INSERT a record into the database.
-        cursor.execute("INSERT INTO tweets(positive, wpositive, spositive, negative, wnegative, snegative, neutral, date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)", (positive, wpositive, spositive, negative, wnegative, snegative, neutral, today))
+        cursor.execute("INSERT INTO tweets(positive, wpositive, spositive, negative, wnegative, snegative, neutral, date, used_word) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)", (positive, wpositive, spositive, negative, wnegative, snegative, neutral, today, searchTerm))
         # Commit your changes in the database
         conn.commit()
         print("Records inserted........")
