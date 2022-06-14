@@ -17,12 +17,7 @@ cur = conn.cursor()
 # A sample query of all data from the "vendors" table in the "suppliers" database
 cur.execute("""SELECT * FROM tweets""")
 query_results = cur.fetchall()
-new_query = []
-for newquery in query_results:
-    for element in newquery:
-        if newquery.index(element) == -1:
-            new_query.append(element)
-    
+new_query = [sublist[-1] for sublist in query_results]
 print(new_query)
 
 # Close the cursor and connection to so the server can allocate
