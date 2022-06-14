@@ -1,4 +1,5 @@
-import sys,tweepy,csv,re,json
+import sys,tweepy,csv,re,os
+from unittest import result
 from textblob import TextBlob
 import matplotlib.pyplot as plt
 import psycopg2
@@ -82,19 +83,6 @@ class tweetAnalysis:
         csvWriter.writerow(self.tweetText)
         csvFile.close()
         
-        diccio = {'positive':positive,
-        'wpositive':wpositive,
-        'spositive':spositive,
-        'negative':negative,
-        'wnegative':wnegative,
-        'snegative':snegative,
-        'neutral':neutral}
-
-        with open('data.json', 'w') as f:
-            json.dump(diccio, f)
-
-
-        
 
         # finding average of how people are reacting
         positive = self.percentage(positive, NoOfTerms)
@@ -173,10 +161,11 @@ class tweetAnalysis:
         plt.title('How people are reacting on ' + searchTerm + ' by analyzing ' + str(noOfSearchTerms) + ' Tweets.')
         plt.axis('equal')
         plt.tight_layout()
-        plt.savefig('chart.png')
+  
 
 
 
 if __name__== "__main__":
     sa = tweetAnalysis()
     sa.DownloadData()
+    os.remove(result.csv)
