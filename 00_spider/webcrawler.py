@@ -118,10 +118,12 @@ class tweetAnalysis:
             print("Strongly Negative")
 
         today = datetime.today().strftime("%Y-%m-%d")
+        now = datetime.now()
+        tiempo = now.strftime("%H:%M:%S")
         #Creating a cursor object using the cursor() method
         cursor = conn.cursor()
         # Preparing SQL queries to INSERT a record into the database.
-        cursor.execute("INSERT INTO tweets(positive, wpositive, spositive, negative, wnegative, snegative, neutral, date, used_word) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)", (positive, wpositive, spositive, negative, wnegative, snegative, neutral, today, searchTerm))
+        cursor.execute("INSERT INTO tweets(positive, wpositive, spositive, negative, wnegative, snegative, neutral, date, used_word, tiempo) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", (positive, wpositive, spositive, negative, wnegative, snegative, neutral, today, searchTerm, tiempo))
         # Commit your changes in the database
         conn.commit()
         print("Records inserted........")
