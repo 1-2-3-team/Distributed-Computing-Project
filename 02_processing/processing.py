@@ -39,7 +39,7 @@ plt.legend(patches, labels, loc="best")
 plt.title('How people are reacting on ' + searchTerm + ' by analyzing Tweets at ' + date)
 plt.axis('equal')
 plt.tight_layout()
-plt.savefig('chart.png')
+plt.savefig('/data/team5/chart.png')
 
 
 conn.close()
