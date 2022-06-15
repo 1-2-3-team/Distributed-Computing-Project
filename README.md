@@ -32,7 +32,13 @@ The aim of this project is to analyze the slant of tweets to determine where peo
 
 ## Methodology
 
-We create a program that calcultates the slant of a tweet through [TextBlop](https://medium.com/red-buffer/sentiment-analysis-let-textblob-do-all-the-work-9927d803d137) and it returns if the tweet is strongly postitive, weakly positive, positive, neutral, weakly negative, negative or strongly negative. TextBlop provides us numeric values for polarity and subjectivity. Polarity describes how much a text is positive or negative, whereas subjectivity describes how much a text is objective or subjective.
+We create a program that calcultates the slant of a tweet through [TextBlop](https://medium.com/red-buffer/sentiment-analysis-let-textblob-do-all-the-work-9927d803d137) and it returns if the tweet is strongly postitive, weakly positive, positive, neutral, weakly negative, negative or strongly negative. <br>
+
+TextBlop provides us numeric values for polarity and subjectivity. Polarity describes how much a text is positive or negative, whereas subjectivity describes how much a text is objective or subjective. For this, TextBlob uses a process defined in [_text.py](https://github.com/sloria/TextBlob/blob/eb08c120d364e908646731d60b4e4c6c1712ff63/textblob/_text.py) and each word in the lexicon is scored as follows: <br>
+
+1. polarity: negative vs. positive (-1.0 → +1.0)
+2. subjectivity: objective vs. subjective (+0.0 → +1.0)
+3. intensity: modifies next word? (x0.5 → x0.2)
 
 ## Results
 
