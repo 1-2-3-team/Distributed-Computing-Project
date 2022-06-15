@@ -15,10 +15,11 @@ Final project of the Distributed Computing 2022-2 class, taught by [Dr. Victor d
 ## Introduction
 [Twitter](https://es.wikipedia.org/wiki/Twitter) is a social networking service where there are no limits or censorship at the time of sharing and posting in exchange for that liberty Twitter can be used as a tool that shows collective behaviors and significant social functions that have been studied in the fields of semiotic communication, the social construction of information and knowledge and other collective phenomena.
 
-In this case, the main subject, the object to study is the “[cancel culture](https://en.wikipedia.org/wiki/Cancel_culture)” defined as a way to restricts the freedom of speech and which is one of the reasons for calling Twitter one of the most toxic social networks; exposing the amount of it is a start for more visibility and awareness the society to take more in serious this problematic and this kind of culture.
+In this case, the main subject is to investigate the position that people have regarding "x" topic on twitter, in this way we can observe what kind of majority dominates and if such topic can even be controversial or quite talked about. 
 
 ## Objectives
-The aim of this project is to analyze the concurrence of tweets related to the cancel culture and compare each iteration with its predecessor to see the change over time, taking into account factors such as censorship that directly threatens freedom of expression, changes in the terms of the platform or even changes in the direction of the platform. 
+The aim of this project is to analyze the slant of tweets to determine where people stand on an issue. 
+
 
 
 ## Libraries
