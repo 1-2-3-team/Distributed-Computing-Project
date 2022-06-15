@@ -31,11 +31,11 @@ The aim of this project is to analyze the concurrence of tweets related to the c
 
 ## Methodology
 
-The proyect is a program that analyses a word in n (a number) of tweets using [TextBlop](https://medium.com/red-buffer/sentiment-analysis-let-textblob-do-all-the-work-9927d803d137) and it returns if the tweet is hardly postitive, slightly positive, positive, neutral, slightly negative, negative or hardly negative.
+The proyect is a program that analyses a word in n (a number) of tweets using [TextBlop](https://medium.com/red-buffer/sentiment-analysis-let-textblob-do-all-the-work-9927d803d137) and it returns if the tweet is strongly postitive, weakly positive, positive, neutral, weakly negative, negative or strongly negative.
 
 ## Results
 
-We graph if the tweet was hardly postitive, slightly positive, positive, neutral, slightly negative, negative or hardly negative given a word.
+We graph if the percentages of whether a tweet was strongly postitive, weakly positive, positive, neutral, weakly negative, negative or strongly negative given a word.
  ![alt text](https://github.com/1-2-3-team/Distributed-Computing-Project/blob/main/02_processing/chart.png)
  
 ## References:
