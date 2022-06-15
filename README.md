@@ -48,7 +48,9 @@ We graph if the percentages of whether a tweet was strongly postitive, weakly po
  
 ## References:
 
->Lin, C., 2022. How to Build a Real-Time Twitter Analysis Using Big Data Tools. [online] Medium. Available at: <https://towardsdatascience.com/how-to-build-a-real-time-twitter-analysis-using-big-data-tools-dd2240946e64> [Accessed 18 April 2022].
+> Lin, C., 2022. How to Build a Real-Time Twitter Analysis Using Big Data Tools. [online] Medium. Available at: <https://towardsdatascience.com/how-to-build-a-real-time-twitter-analysis-using-big-data-tools-dd2240946e64> [Accessed 18 April 2022].
+> https://medium.com/red-buffer/sentiment-analysis-let-textblob-do-all-the-work-9927d803d137
+> https://github.com/sloria/TextBlob/tree/eb08c120d364e908646731d60b4e4c6c1712ff63
 
 
 
