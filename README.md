@@ -32,6 +32,12 @@ The aim of this project is to analyze the concurrence of tweets related to the c
 ## Methodology
 
 The proyect is a program that analyses a word in n (a number) of tweets using [TextBlop](https://medium.com/red-buffer/sentiment-analysis-let-textblob-do-all-the-work-9927d803d137) and it returns if the tweet is hardly postitive, slightly positive, positive, neutral, slightly negative, negative or hardly negative.
+
+## Results
+
+We graph if the tweet was hardly postitive, slightly positive, positive, neutral, slightly negative, negative or hardly negative given a word.
+ ![alt text](https://github.com/1-2-3-team/Distributed-Computing-Project/blob/main/02_processing/chart.png)
+ 
 ## References:
 
 >Lin, C., 2022. How to Build a Real-Time Twitter Analysis Using Big Data Tools. [online] Medium. Available at: <https://towardsdatascience.com/how-to-build-a-real-time-twitter-analysis-using-big-data-tools-dd2240946e64> [Accessed 18 April 2022].
