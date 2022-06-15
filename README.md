@@ -35,7 +35,8 @@ The proyect is a program that analyses a word in n (a number) of tweets using [T
 
 ## Results
 
-We graph if the percentages of whether a tweet was strongly postitive, weakly positive, positive, neutral, weakly negative, negative or strongly negative given a word.
+We graph if the percentages of whether a tweet was strongly postitive, weakly positive, positive, neutral, weakly negative, negative or strongly negative given a word. <br>
+
  ![alt text](https://github.com/1-2-3-team/Distributed-Computing-Project/blob/main/02_processing/chart.png)
  
 ## References:
