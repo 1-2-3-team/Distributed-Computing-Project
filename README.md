@@ -38,8 +38,9 @@ TextBlop provides us numeric values for polarity and subjectivity. Polarity desc
 
 1. polarity: negative vs. positive (-1.0 → +1.0)
 2. subjectivity: objective vs. subjective (+0.0 → +1.0)
-3. intensity: modifies next word? (x0.5 → x0.2)
+3. intensity: modifies next word? (x0.5 → x0.2) <br>
 
+These lexicons are referred to in [en-sentiment.xml](https://github.com/sloria/TextBlob/blob/eb08c120d364e908646731d60b4e4c6c1712ff63/textblob/en/en-sentiment.xml). 
 ## Results
 
 We graph if the percentages of whether a tweet was strongly postitive, weakly positive, positive, neutral, weakly negative, negative or strongly negative given a word. <br>
