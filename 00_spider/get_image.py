@@ -21,8 +21,13 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 OR OTHER DEALINGS IN THE SOFTWARE.
 '''
 
+import csv
 import subprocess
 import os
+from turtle import home
 p = subprocess.Popen(["scp", "/data/team5/chart.png", "lbgalvan@132.247.186.67:/home/lbgalvan/public_html/img/"])
 html =  subprocess.Popen(["scp", "-r", "/home/lbgalvan/git/Distributed-Computing-Project/public_html/", "lbgalvan@132.247.186.67:/home/lbgalvan/"])
+r = subprocess.Popen(["rm", "/home/lbgalvan/result.csv"])
 sts = os.waitpid(p.pid, 0)
+sts1 = os.waitpid(r.pid, 0)
+sts2 = os.waitpid(html.pid, 0)
