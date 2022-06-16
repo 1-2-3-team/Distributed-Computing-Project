@@ -53,7 +53,7 @@ class tweetAnalysis:
         api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
         # input for term to be searched and how many tweets to search
-        searchTerm = "#freedomofspeech"
+        searchTerm = "AIDS"
         NoOfTerms = 1000
 
         # searching for tweets
