@@ -32,6 +32,9 @@ The aim of our project is to obtain with a distributed system structure the opin
 # General system architecture
 ![Infrastructure](https://raw.githubusercontent.com/1-2-3-team/Distributed-Computing-Project/main/estructura.png)
 
+![DatabaseStructure](https://raw.githubusercontent.com/1-2-3-team/Distributed-Computing-Project/main/db%20structure.jpeg)
+
+
 
 # Toolset
 * [Python 3.8.13](https://www.python.org/)
