@@ -12,51 +12,69 @@ Final project of the Distributed Computing 2022-2 class, taught by [Dr. Victor d
 - [Luis Yovanny Bedolla Galvan](https://github.com/GalvanLuis) (<gruisu93@gmail.com>)
 
 
-## Introduction
-[Twitter](https://es.wikipedia.org/wiki/Twitter) is a social networking service where there are no limits or censorship at the time of sharing and posting in exchange for that liberty Twitter can be used as a tool that shows collective behaviors and significant social functions that have been studied in the fields of semiotic communication, the social construction of information and knowledge and other collective phenomena.
-
-In this case, the main subject is to investigate the position that people have regarding "x" topic on twitter, in this way we can observe what kind of majority dominates and if such topic can even be controversial or quite talked about. 
-
-## Objectives
-The aim of this project is to analyze the slant of tweets to determine where people stand on an issue. 
-
-
-## Libraries
-
-- [NumPy](https://numpy.org/)
-
-- [Tweepy](https://github.com/tweepy/tweepy)
-
-- [TextBlop](https://textblob.readthedocs.io/en/dev/)
-
-## Methodology
-
-We create a program that calcultates the sentiment of a tweet through [TextBlop](https://medium.com/red-buffer/sentiment-analysis-let-textblob-do-all-the-work-9927d803d137) and returns the percentages of whether a tweet is strongly postitive, weakly positive, positive, neutral, weakly negative, negative or strongly negative. <br>
-
-TextBlop provides us numeric values for polarity and subjectivity. Polarity describes how much a text is positive or negative, whereas subjectivity describes how much a text is objective or subjective. For this, TextBlob uses a process defined in [_text.py](https://github.com/sloria/TextBlob/blob/eb08c120d364e908646731d60b4e4c6c1712ff63/textblob/_text.py) and each word in the lexicon is scored as follows: <br>
-
-1. polarity: negative vs. positive (-1.0 → +1.0)
-2. subjectivity: objective vs. subjective (+0.0 → +1.0)
-3. intensity: modifies next word? (x0.5 → x0.2) <br>
-
-These lexicons are referred to in [en-sentiment.xml](https://github.com/sloria/TextBlob/blob/eb08c120d364e908646731d60b4e4c6c1712ff63/textblob/en/en-sentiment.xml). 
-
-## Running
 
 
 
-## Results
 
-We graph if the percentages of whether a tweet was strongly postitive, weakly positive, positive, neutral, weakly negative, negative or strongly negative given a word. <br>
+# Introduction
+The first idea of this project was to analyze the "cancel culture" because there is a great debate about whether it infringes on freedom of expression or benefits the communication between people, but to tell the truth any word, phrase or #hashtag, could be analyzed to know the positions of people on the tweets that contain it.
 
- ![alt text](https://github.com/1-2-3-team/Distributed-Computing-Project/blob/main/02_processing/chart.png)
- 
-## References:
+Based on that idea we could think of a text string that normally makes people give their opinion about it.
 
-> Lin, C., 2022. How to Build a Real-Time Twitter Analysis Using Big Data Tools. [online] Medium. Available at: <https://towardsdatascience.com/how-to-build-a-real-time-twitter-analysis-using-big-data-tools-dd2240946e64> [Accessed 18 April 2022].
-> https://medium.com/red-buffer/sentiment-analysis-let-textblob-do-all-the-work-9927d803d137
-> https://github.com/sloria/TextBlob/tree/eb08c120d364e908646731d60b4e4c6c1712ff63
+As we read in the first paragraph we will use tweets, because twitter is one of the most popular and "free" platforms, and has lent itself to its users to give their opinion on different topics. 
 
 
+# Objectives
+The aim of our project is to obtain with a distributed system structure the opinion polarity of a sample taken from Twitter of tweets with a common word, phrase or hashtag every certain time in order to visualize its changes in real time.
+
+
+
+# General system architecture
+![Infrastructure](https://raw.githubusercontent.com/1-2-3-team/Distributed-Computing-Project/main/estructura.png)
+
+
+# Toolset
+* [Python 3.8.13](https://www.python.org/)
+* [Tweepy 3.9.0](https://www.tweepy.org/) for data collection of tweets. 
+* [Psycopg2](https://pypi.org/project/psycopg2/) For conection between python and the postgress database
+* [NumPy](https://numpy.org/)
+* [TextBlop](https://textblob.readthedocs.io/en/dev/)
+
+# Methodology
+
+To develop the project based on a word, phrase or hashtag we have taken a sample of 1000 tweets through the Twitter V2 API, this sample is analyzed by TextBlop which returns the polarity of the text in the following ranges [-3, -2, -1, 1, 2, 3] where a negative value is a negative polarity or opinion, while a positive value is a positive polarity or opinion.
+
+# Usage
+
+For usage please place the files to the next locations:
+
+* Files inside 00_spider > Data server
+* Files inside 02_processing > Processing server
+* Files inside public_html > Web server
+
+-Create crontab -e write inside Data server:
+>*/30 * * * * /usr/bin/python3 ./path/to/00_spider/webcrawler.py
+>*/31 * * * * /usr/bin/python3 ./path/to/00_spider/get_image.py
+
+-Create crontab -e write inside Processing server:
+>*/31 * * * * /usr/bin/python3 ./path/to/02_processig/processing.py
+
+# Results
+
+Every 30 minutes we get an image which gives us the percentages of polarity in the sample of tweets with a date and time when the script was executed.
+
+![Results](https://raw.githubusercontent.com/1-2-3-team/Distributed-Computing-Project/main/02_processing/chart.png)
+
+# Conclusions
+People can have different kinds of opinions on many subjects and freedom of expression in all aspects of life is underpinned by the morality of the human being in the case of Twitter, freedom of expression is driven by the majority of people having an opinion on the same subject and the terms and conditios of Twitter.
+
+With this little piece of software we can get a brief visualization of the polarity of the people's opinion about a topic.
+
+# Reference
+>Twitter API Documentation. (n.d.). Docs | Twitter Developer Platform. Retrieved June 15, 2022, from https://developer.twitter.com/en/docs/twitter-api
+>Tweepy Documentation — tweepy 3.9.0 documentation. (n.d.). Tweepy. Retrieved June 15, 2022, from https://docs.tweepy.org/en/v3.9.0/
+>TextBlob: Simplified Text Processing — TextBlob 0.16.0 documentation. (n.d.). TextBlop. Retrieved June 15, 2022, from https://textblob.readthedocs.io/en/dev/
+>Nott, L. N. (n.d.). PERSPECTIVE: UNPACKING CANCEL CULTURE: IS IT CENSORSHIP, CIVIL RIGHT OR SOMETHING ELSE? Freedomforum.Org. Retrieved June 15, 2022, from https://www.freedomforum.org/2022/02/09/perspective-unpacking-cancel-culture-is-it-censorship-civil-right-or-something-else/
+>3.8.13 Documentation. (n.d.). Python. Retrieved June 15, 2022, from https://docs.python.org/3.8/
 
 
