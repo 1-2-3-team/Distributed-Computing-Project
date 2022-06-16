@@ -77,4 +77,5 @@ With this little piece of software we can get a brief visualization of the polar
 >Nott, L. N. (n.d.). PERSPECTIVE: UNPACKING CANCEL CULTURE: IS IT CENSORSHIP, CIVIL RIGHT OR SOMETHING ELSE? Freedomforum.Org. Retrieved June 15, 2022, from https://www.freedomforum.org/2022/02/09/perspective-unpacking-cancel-culture-is-it-censorship-civil-right-or-something-else/
 >3.8.13 Documentation. (n.d.). Python. Retrieved June 15, 2022, from https://docs.python.org/3.8/
 
-
+Copyright
+All licenses in this repository are copyrighted by their respective authors. Everything else is released under The MIT License. See LICENSE for details.
