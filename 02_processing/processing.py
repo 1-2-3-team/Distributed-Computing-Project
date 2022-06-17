@@ -59,16 +59,17 @@ searchTerm = str(new_query[8])
 date = str(new_query[7])
 time = str(new_query[9])
 
-y = np.array([positive, wpositive, spositive,negative, wnegative, snegative, neutral])
-labels = ['Positive', 'Weakly Positive','Strongly Positive', 'Neutral', 'Negative', 'Weakly Negative', 'Strongly Negative']
-sizes = [positive, wpositive, spositive, neutral, negative, wnegative, snegative]
+y = np.array([spositive, wpositive, positive,negative, wnegative, snegative, neutral])
+labels = ['Strongly Positive', 'Weakly Positive','Positive', 'Neutral', 'Negative', 'Weakly Negative', 'Strongly Negative']
+sizes = [spositive, wpositive, positive, neutral, negative, wnegative, snegative]
 fig, ax = plt.subplots()
 theme = plt.get_cmap('bwr')
 ax.set_prop_cycle(color = ['blue','cyan', 'green', 'grey', 'yellow', 'orange', 'red'])
 box = ax.get_position()
+explode = [0, 0, 0, 0.2, 0, 0, 0]
 ax.set_position([box.x0, box.y0, box.width * 1.3, box.height])
 _, _, autotexts = ax.pie(
-    sizes, autopct=autopct_generator(7), startangle=90, radius=1.8 * 1000)
+    sizes, autopct=autopct_generator(7), startangle=90, explode=explode, radius=1.8 * 1000)
 for autotext in autotexts:
     autotext.set_weight('bold')
 ax.axis('equal')
@@ -77,11 +78,14 @@ plt.legend(
     loc='upper left',
     labels=['%s, %1.1f%%' % (
         l, (float(s) / total) * 100) for l, s in zip(labels, sizes)],
-    prop={'size': 12},
+    prop={'size': 8},
     bbox_to_anchor=(0.0, 1),
     bbox_transform=fig.transFigure
 )
-ax.set_title('Tweets analized')
+ax.figtext(x=1, y=0.05, s='Results are given by taking a sample of 1000 tweets each 30 minutes a day.',
+
+size=9, horizontalalignment='right')
+ax.set_title('Tweets analized today ' + date + ' at ' + time)
 ax.figure.savefig('/data/team5/chart.png')
 
 
