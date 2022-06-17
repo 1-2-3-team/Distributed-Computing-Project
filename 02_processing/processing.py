@@ -58,7 +58,7 @@ y = np.array([positive, wpositive, spositive,negative, wnegative, snegative, neu
 labels = ['Strongly Positive', 'Weakly Positive', 'Positive', 'Neutral', 'Negative', 'Weakly Negative', 'Strongly Negative']
 sizes = [spositive, wpositive, positive, neutral, negative, wnegative, snegative]
 #colors = ['yellowgreen','lightgreen','darkgreen', 'grey', 'red','lightsalmon','darkred']
-plt.pie(sizes, autopct='%.0f%%', labels=labels, startangle=90, shadow=True, radius=1.1, wedgeprops={'edgecolor': 'black'})
+plt.pie(sizes, autopct='%1.1f%%', labels=labels, startangle=90, shadow=True, radius=1.1, wedgeprops={'edgecolor': 'black'})
 #plt.legend(patches, labels, loc="best")
 plt.title('Tweets analizded')
 plt.axis('equal')
