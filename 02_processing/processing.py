@@ -55,12 +55,12 @@ date = str(new_query[7])
 time = str(new_query[9])
 
 y = np.array([positive, wpositive, spositive,negative, wnegative, snegative, neutral])
-labels = ['Positive [' + str(positive) + '%]', 'Weakly Positive [' + str(wpositive) + '%]','Strongly Positive [' + str(spositive) + '%]', 'Neutral [' + str(neutral) + '%]', 'Negative [' + str(negative) + '%]', 'Weakly Negative [' + str(wnegative) + '%]', 'Strongly Negative [' + str(snegative) + '%]']
-sizes = [positive, wpositive, spositive, neutral, negative, wnegative, snegative]
-colors = ['yellowgreen','lightgreen','darkgreen', 'grey', 'red','lightsalmon','darkred']
-patches, texts = plt.pie(sizes, colors=colors, startangle=90)
-plt.legend(patches, labels, loc="best")
-plt.title('How people are reacting on ' + searchTerm + ' on ' + date + ' at ' + time)
+labels = ['Strongly Positive', 'Weakly Positive', 'Positive', 'Neutral', 'Negative', 'Weakly Negative', 'Strongly Negative']
+sizes = [spositive, wpositive, positive, neutral, negative, wnegative, snegative]
+#colors = ['yellowgreen','lightgreen','darkgreen', 'grey', 'red','lightsalmon','darkred']
+patches, texts = plt.pie(sizes, autopct='%.0f%%', startangle=20, shadow=True, radius=1.1, wedgeprops={'edgecolor': 'black'})
+#plt.legend(patches, labels, loc="best")
+plt.title('Tweets analizded')
 plt.axis('equal')
 plt.tight_layout()
 plt.savefig('/data/team5/chart.png')
