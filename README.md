@@ -21,7 +21,7 @@ The first idea of this project was to analyze the "cancel culture" because there
 
 Based on that idea we could think of a text string that normally makes people give their opinion about it.
 
-As we read in the first paragraph we will use tweets, because twitter is one of the most popular and "free" platforms, and has lent itself to its users to give their opinion on different topics. 
+As we read in the first paragraph we will use tweets, because Twitter is one of the most popular and "free" platforms in occident, and has lent itself to its users to give their opinion on different topics. 
 
 
 # Objectives
