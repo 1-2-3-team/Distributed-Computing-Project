@@ -2,7 +2,6 @@
 
 Final project of the Distributed Computing 2022-2 class, taught by [Dr. Victor de la Luz](https://github.com/itztli) (<vdelaluz@enesmorelia.unam.mx>) and Dr. Héctor Guzmán (<guzman@enesmorelia.unam.mx>) at *[Universidad Nacional Autónoma de México](https://www.unam.mx/)* (National Autonomous University of Mexico | UNAM) [http://www.gicc.unam.mx/](http://www.gicc.unam.mx/), in its *[Escuela Nacional de Estudios Superiores, Unidad Morelia](https://www.enesmorelia.unam.mx/)* (National School of Superior-Level Studies, *Morelia* Campus | ENES).
 
-> 1-2-3-team/Distributed-Computing-Project is licensed under the MIT License
 
 # Equipo 1,2,3
 
@@ -11,6 +10,7 @@ Final project of the Distributed Computing 2022-2 class, taught by [Dr. Victor d
 - [Ana Paola Carreón Hernández](https://github.com/Mordran) (<anapcahe@gmail.com>)
 - [Luis Yovanny Bedolla Galvan](https://github.com/GalvanLuis) (<gruisu93@gmail.com>)
 
+> 1-2-3-team/Distributed-Computing-Project is licensed under the MIT License
 
 
 
