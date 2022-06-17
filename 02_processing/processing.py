@@ -55,11 +55,11 @@ date = str(new_query[7])
 time = str(new_query[9])
 
 y = np.array([positive, wpositive, spositive,negative, wnegative, snegative, neutral])
-labels = ['Strongly Positive', 'Weakly Positive', 'Positive', 'Neutral', 'Negative', 'Weakly Negative', 'Strongly Negative']
-sizes = [spositive, wpositive, positive, neutral, negative, wnegative, snegative]
-#colors = ['yellowgreen','lightgreen','darkgreen', 'grey', 'red','lightsalmon','darkred']
-plt.pie(sizes, autopct='%1.0f%%', labels=labels, startangle=90, shadow=True, radius=1.1, wedgeprops={'edgecolor': 'black'}, pctdistance=1.1, labeldistance=1.2)
-#plt.legend(patches, labels, loc="best")
+labels = ['Positive', 'Weakly Positive','Strongly Positive', 'Neutral', 'Negative', 'Weakly Negative', 'Strongly Negative']
+sizes = [positive, wpositive, spositive, neutral, negative, wnegative, snegative]
+colors = ['yellowgreen','lightgreen','darkgreen', 'grey', 'red','lightsalmon','darkred']
+patches, texts = plt.pie(sizes, colors=colors, autopct='%1.0f%%', labels=labels, startangle=90, shadow=True, radius=1.1, wedgeprops={'edgecolor': 'black'}, pctdistance=1.1, labeldistance=1.2)
+plt.legend(patches, labels, loc="best")
 plt.title('Tweets analized')
 plt.axis('equal')
 plt.tight_layout()
