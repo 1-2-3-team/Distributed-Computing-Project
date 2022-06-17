@@ -62,7 +62,7 @@ fig, ax = plt.subplots()
 #colors = ['yellowgreen','lightgreen','darkgreen', 'grey', 'red','lightsalmon','darkred']
 ax.pie(sizes, autopct='%.1f%%', shadow=True, startangle=90)
 ax.legend(labels, loc='best')
-ax[.set_title('Tweets analized')
+ax.set_title('Tweets analized')
 ax.set_aspect('equal')
 #plt.tight_layout()
 ax.savefig('/data/team5/chart.png')
