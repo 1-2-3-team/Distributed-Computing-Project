@@ -57,13 +57,15 @@ time = str(new_query[9])
 y = np.array([positive, wpositive, spositive,negative, wnegative, snegative, neutral])
 labels = ['Positive', 'Weakly Positive','Strongly Positive', 'Neutral', 'Negative', 'Weakly Negative', 'Strongly Negative']
 sizes = [positive, wpositive, spositive, neutral, negative, wnegative, snegative]
-colors = ['yellowgreen','lightgreen','darkgreen', 'grey', 'red','lightsalmon','darkred']
-patches, texts = plt.pie(sizes, colors=colors, autopct='%1.0f%%', labels=labels, startangle=90, shadow=True, radius=1.1, wedgeprops={'edgecolor': 'black'}, pctdistance=1.1, labeldistance=1.2)
-plt.legend(patches, labels, loc="best")
-plt.title('Tweets analized')
-plt.axis('equal')
-plt.tight_layout()
-plt.savefig('/data/team5/chart.png')
+explode = (0,0,0,0.1,0,0,0)
+fig, ax = plt.subplots()
+#colors = ['yellowgreen','lightgreen','darkgreen', 'grey', 'red','lightsalmon','darkred']
+ax.pie(sizes, autopct='%.1f%%', shadow=True, startangle=90)
+ax.legend(labels, loc='best')
+ax.title('Tweets analized', loc="upper left")
+ax.set_aspect('equal')
+#plt.tight_layout()
+ax.savefig('/data/team5/chart.png')
 
 
 conn.close()
