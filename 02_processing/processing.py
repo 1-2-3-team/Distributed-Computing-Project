@@ -65,7 +65,7 @@ ax.legend(labels, loc='best')
 ax.set_title('Tweets analized')
 ax.set_aspect('equal')
 #plt.tight_layout()
-ax.savefig('/data/team5/chart.png')
+ax.figure.savefig('/data/team5/chart.png')
 
 
 conn.close()
