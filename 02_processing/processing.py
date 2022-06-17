@@ -65,7 +65,7 @@ sizes = [positive, wpositive, spositive, neutral, negative, wnegative, snegative
 NUM_COLORS = len(sizes)
 fig, ax = plt.subplots()
 theme = plt.get_cmap('bwr')
-ax.set_color_cycle([theme(
+ax.set_prop_cycle([theme(
     1. * i / NUM_COLORS) for i in range(NUM_COLORS)])
 box = ax.get_position()
 ax.set_position([box.x0, box.y0, box.width * 1.3, box.height])
