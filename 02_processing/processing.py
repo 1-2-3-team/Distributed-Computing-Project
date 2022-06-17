@@ -64,7 +64,7 @@ labels = ['Positive', 'Weakly Positive','Strongly Positive', 'Neutral', 'Negativ
 sizes = [positive, wpositive, spositive, neutral, negative, wnegative, snegative]
 fig, ax = plt.subplots()
 theme = plt.get_cmap('bwr')
-ax.set_prop_cycle('blue','cyan', 'green', 'grey', 'yellow', 'orange', 'red')
+ax.set_prop_cycle(color = ['blue','cyan', 'green', 'grey', 'yellow', 'orange', 'red'])
 box = ax.get_position()
 ax.set_position([box.x0, box.y0, box.width * 1.3, box.height])
 _, _, autotexts = ax.pie(
