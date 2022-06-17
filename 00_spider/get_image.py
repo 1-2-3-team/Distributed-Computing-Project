@@ -25,8 +25,9 @@ import subprocess
 import os
 
 p = subprocess.Popen(["scp", "/data/team5/chart.png", "lbgalvan@132.247.186.67:/home/lbgalvan/public_html/static/images/"])
+q = subprocess.Popen(["scp", "/home/lbgalvan/git/Distributed-Computing-Project/02_processing/processing.py", "team5@192.168.0.30:/home/team5/"])
 #html =  subprocess.Popen(["scp", "-r", "/home/lbgalvan/git/Distributed-Computing-Project/public_html/", "lbgalvan@132.247.186.67:/home/lbgalvan/"])
 r = subprocess.Popen(["rm", "/home/lbgalvan/result.csv"])
 sts = os.waitpid(p.pid, 0)
 sts1 = os.waitpid(r.pid, 0)
-#sts2 = os.waitpid(html.pid, 0)
+sts2 = os.waitpid(q.pid, 0)
