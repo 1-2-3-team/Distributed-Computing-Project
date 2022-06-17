@@ -82,8 +82,8 @@ plt.legend(
     bbox_to_anchor=(0.0, 1),
     bbox_transform=fig.transFigure
 )
-ax.figtext(x=1, y=0.05, s='Results are given by taking a sample of 1000 tweets each 30 minutes a day.',
-
+tant = ax.annotate("Results are given by taking a sample of 1000 tweets each 30 minutes a day.", xy=(0,0), xytext=(2,2),textcoords="offset points", bbox=dict(boxstyle="round", fc="w"), zorder=10)
+ax.add_artist(tant)
 size=9, horizontalalignment='right')
 ax.set_title('Tweets analized today ' + date + ' at ' + time)
 ax.figure.savefig('/data/team5/chart.png')
