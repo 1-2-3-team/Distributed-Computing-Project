@@ -53,7 +53,7 @@ For usage please place the files to the next locations:
 
 * Files inside 00_spider > Data server
 * Files inside 02_processing > Processing server
-* Files inside public_html > Web server www.gicc.unam.mx/lbgalvan/
+* Files inside public_html > Web server 
 
 -Create crontab -e write inside Data server:
 >30 * * * * /usr/bin/python3 ./path/to/00_spider/webcrawler.py
@@ -65,7 +65,7 @@ For usage please place the files to the next locations:
 
 # Results
 
-Every 30 minutes we get an image which gives us the percentages of polarity in the sample of tweets with a date and time when the script was executed.
+Every 30 minutes we get an image which gives us the percentages of polarity in the sample of tweets with a date and time when the script was executed. Link to our page: www.gicc.unam.mx/lbgalvan/
 
 ![Results](https://raw.githubusercontent.com/1-2-3-team/Distributed-Computing-Project/main/chart.png)
 
