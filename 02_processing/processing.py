@@ -29,6 +29,7 @@ import numpy as np
 from datetime import datetime
 from datetime import timezone
 from datetime import timedelta
+from matplotlib.offsetbox import AnchoredText
 
 # Establish a connection to the database by creating a cursor object
 # The PostgreSQL server must be accessed through the PostgreSQL APP or Terminal Shell
@@ -90,8 +91,12 @@ plt.legend(
     bbox_to_anchor=(0.0, 1),
     bbox_transform=fig.transFigure
 )
-tant = ax.annotate("Results are given by taking a sample of 1000 tweets each 30 minutes a day.", xy=(-0.5, -1), xytext=(30,-10))
-ax.add_artist(tant)
+#tant = ax.annotate("Results are given by taking a sample of 1000 tweets each 30 minutes a day.", xy=(-0.5, -1), xytext=(30,-10))
+#ax.add_artist(tant)
+at = AnchoredText(
+    "Results are given by taking a sample of 1000 tweets each 30 minutes a day.", prop=dict(size=15), frameon=True, loc='upper left')
+at.patch.set_boxstyle("round,pad=0.,rounding_size=0.2")
+ax.add_artist(at)
 ax.set_title('Tweets analized for ' + searchTerm + ' on ' + date_time_stamp)
 ax.figure.savefig('/data/team5/chart.png')
 
