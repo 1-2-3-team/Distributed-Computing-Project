@@ -77,7 +77,7 @@ box = ax.get_position()
 explode = [0, 0, 0, 0.4, 0, 0, 0]
 ax.set_position([box.x0, box.y0, box.width * 1.3, box.height])
 _, _, autotexts = ax.pie(
-    sizes, autopct=autopct_generator(7), startangle=90, explode=explode, radius=1.8 * 1000)
+    sizes, autopct=autopct_generator(7), startangle=90, explode=explode, radius=1.6 * 1000)
 for autotext in autotexts:
     autotext.set_weight('bold')
 ax.axis('equal')
