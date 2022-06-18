@@ -57,6 +57,7 @@ For usage please place the files to the next locations:
 
 -Create crontab -e write inside Data server:
 >30 * * * * /usr/bin/python3 ./path/to/00_spider/webcrawler.py
+
 >32 * * * * /usr/bin/python3 ./path/to/00_spider/get_image.py
 
 -Create crontab -e write inside Processing server:
