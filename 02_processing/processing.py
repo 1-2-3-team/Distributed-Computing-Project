@@ -26,6 +26,7 @@ import psycopg2
 from datetime import datetime
 import matplotlib.pyplot as plt
 import numpy as np
+from datetime import datetime as dt
 
 # Establish a connection to the database by creating a cursor object
 # The PostgreSQL server must be accessed through the PostgreSQL APP or Terminal Shell
@@ -41,6 +42,11 @@ cur = conn.cursor()
 cur.execute("""SELECT * FROM tweets""")
 query_results = cur.fetchall()
 new_query = query_results = query_results[-1]
+
+date_time = datetime.now()
+date_time_stamp = date_time.strftime('%d/%m/%Y %H:%M')
+
+
 
 def autopct_generator(limit):
     """Remove percent on small slices."""
@@ -84,7 +90,7 @@ plt.legend(
 )
 tant = ax.annotate("Results are given by taking a sample of 1000 tweets each 30 minutes a day.", xy=(0,0), xytext=(2,2),textcoords="offset points", bbox=dict(boxstyle="round", fc="w"), zorder=10)
 ax.add_artist(tant)
-ax.set_title('Tweets analized today ' + date + ' at ' + time)
+ax.set_title('Tweets analized today at ' + date_time_stamp)
 ax.figure.savefig('/data/team5/chart.png')
 
 
