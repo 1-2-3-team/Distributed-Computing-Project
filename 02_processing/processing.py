@@ -26,8 +26,9 @@ import psycopg2
 from datetime import datetime
 import matplotlib.pyplot as plt
 import numpy as np
-from datetime import datetime as dt
-from datetime import timezone as tz
+from datetime import datetime
+from datetime import timezone
+from datetime import timedelta
 
 # Establish a connection to the database by creating a cursor object
 # The PostgreSQL server must be accessed through the PostgreSQL APP or Terminal Shell
