@@ -93,7 +93,7 @@ plt.legend(
 #tant = ax.annotate("Results are given by taking a sample of 1000 tweets each 30 minutes a day.", xy=(-0.5, -1), xytext=(30,-10))
 #ax.add_artist(tant)
 at = AnchoredText(
-    "Results are given by taking a sample of 1000 tweets each 30 minutes a day.", prop=dict(size=8), frameon=False, loc='best')
+    "Results are given by taking a sample of 1000 tweets each 30 minutes a day.", prop=dict(size=7), frameon=False, loc='lower left')
 at.patch.set_boxstyle(round,pad=0.,rounding_size=0.2)
 ax.add_artist(at)
 ax.set_title('Tweets analyzed for ' + searchTerm + ' on ' + date_time_stamp)
