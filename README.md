@@ -17,7 +17,7 @@ Final project of the Distributed Computing 2022-2 class, taught by [Dr. Victor d
 
 
 # Introduction
-The first idea of this project was to analyze the "cancel culture" because there is a great debate about whether it infringes on freedom of expression or benefits the communication between people, but to tell the truth any word, phrase or #hashtag, could be analyzed to know the positions of people on the tweets that contain it.
+The first idea of this project was to analyze the ["cancel culture"](https://www.freedomforum.org/2022/02/09/perspective-unpacking-cancel-culture-is-it-censorship-civil-right-or-something-else/) because there is a great debate about whether it infringes on freedom of expression or benefits the communication between people, but to tell the truth any word, phrase or #hashtag, could be analyzed to know the positions of people on the tweets that contain it.
 
 Based on that idea we could think of a text string that normally makes people give their opinion about it.
 
@@ -45,7 +45,7 @@ The aim of our project is to obtain with a distributed system structure the opin
 
 # Methodology
 
-To develop the project based on a word, phrase or hashtag we have taken a sample of 1000 tweets through the Twitter V2 API, this sample is analyzed by TextBlop which returns the polarity of the text in the following ranges [-3, -2, -1, 1, 2, 3] where a negative value is a negative polarity or opinion, while a positive value is a positive polarity or opinion.
+To develop the project based on a word, phrase or hashtag we have taken a sample of 1000 tweets through the Twitter V2 API, this sample is analyzed by TextBlop which returns the polarity of the text in the following ranges [-6, -3, -1, 1, 3, 6] where a negative value is a negative polarity or opinion, while a positive value is a positive polarity or opinion.
 
 # Usage
 
