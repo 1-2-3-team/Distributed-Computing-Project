@@ -70,9 +70,9 @@ Every 30 minutes we get an image which gives us the percentages of polarity in t
 ![Results](https://raw.githubusercontent.com/1-2-3-team/Distributed-Computing-Project/main/chart.png)
 
 # Conclusions
-With this little piece of software we can get a brief visualization of the polarity of the occidental population opinion; the reason why we remark the occidental is because for them the most popular app to express their opinion with freedom is Twitter.
+With this little piece of software we can get a brief visualization of the polarity of the occidental population opinion; the reason why we remark the occidental is because for them the most popular app to express their opinion with freedom is Twitter. But the only problem is that we are limited by the concept of good and evil. There's a lot of factor we can consider to argue that not all positive opinions are truly positive. Any way as William Shakespeare said: "There is nothing either good or bad but thinking makes it so."
 
-Taking the last in consideration this project can be used for a bigger study but the feedback has his limitations in the way it is classified the reason is the polarization its limited to the judgement of the programmer of TextBlob a way that this problematic can be neutralized is calibrating the program through a test where inserts in the database tweets already filtered and clasified via intention, process it and check if the results are correct in base a general judgement of the analized society.
+Taking the last in consideration this project can be used for a bigger study but the feedback has his limitations in the way it is classified the reason is the polarization its limited to the bias of the programmer of TextBlob a way that this problematic can be neutralized is calibrating the program through a test where inserts in the database tweets already filtered and clasified via intention, process it and check if the results are correct in base a general judgement of the analyzed society.
 
 # Reference
 >Twitter API Documentation. (n.d.). Docs | Twitter Developer Platform. Retrieved June 15, 2022, from https://developer.twitter.com/en/docs/twitter-api
