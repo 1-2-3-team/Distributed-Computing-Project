@@ -66,7 +66,7 @@ For usage please place the files to the next locations:
 
 Every 30 minutes we get an image which gives us the percentages of polarity in the sample of tweets with a date and time when the script was executed.
 
-![Results](https://raw.githubusercontent.com/1-2-3-team/Distributed-Computing-Project/main/02_processing/chart.png)
+![Results](https://raw.githubusercontent.com/1-2-3-team/Distributed-Computing-Project/main/chart.png)
 
 # Conclusions
 With this little piece of software we can get a brief visualization of the polarity of the occidental population opinion; the reason why we remark the occidental is because for them the most popular app to express their opinion with freedom is Twitter.
