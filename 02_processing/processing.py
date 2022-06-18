@@ -27,6 +27,7 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 import numpy as np
 from datetime import datetime as dt
+from datetime import timezone as tz
 
 # Establish a connection to the database by creating a cursor object
 # The PostgreSQL server must be accessed through the PostgreSQL APP or Terminal Shell
@@ -43,10 +44,10 @@ cur.execute("""SELECT * FROM tweets""")
 query_results = cur.fetchall()
 new_query = query_results = query_results[-1]
 
-date_time = datetime.now()
+diferencia = timedelta(hours=-5)
+time_zone = timezone(diferencia)
+date_time = datetime.now(time_zone)
 date_time_stamp = date_time.strftime('%d/%m/%Y %H:%M')
-
-
 
 def autopct_generator(limit):
     """Remove percent on small slices."""
