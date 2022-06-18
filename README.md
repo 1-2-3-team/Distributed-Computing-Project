@@ -56,11 +56,11 @@ For usage please place the files to the next locations:
 * Files inside public_html > Web server
 
 -Create crontab -e write inside Data server:
->*/30 * * * * /usr/bin/python3 ./path/to/00_spider/webcrawler.py
->*/31 * * * * /usr/bin/python3 ./path/to/00_spider/get_image.py
+>30 * * * * /usr/bin/python3 ./path/to/00_spider/webcrawler.py
+>32 * * * * /usr/bin/python3 ./path/to/00_spider/get_image.py
 
 -Create crontab -e write inside Processing server:
->*/31 * * * * /usr/bin/python3 ./path/to/02_processig/processing.py
+>31 * * * * /usr/bin/python3 ./path/to/02_processig/processing.py
 
 # Results
 
