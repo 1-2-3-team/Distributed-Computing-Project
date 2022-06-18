@@ -53,7 +53,7 @@ For usage please place the files to the next locations:
 
 * Files inside 00_spider > Data server
 * Files inside 02_processing > Processing server
-* Files inside public_html > Web server
+* Files inside public_html > Web server www.gicc.unam.mx/lbgalvan/
 
 -Create crontab -e write inside Data server:
 >30 * * * * /usr/bin/python3 ./path/to/00_spider/webcrawler.py
