@@ -10,7 +10,7 @@ Final project of the Distributed Computing 2022-2 class, taught by [Dr. Victor d
 - [Ana Paola Carreón Hernández](https://github.com/Mordran) (<anapcahe@gmail.com>)
 - [Luis Yovanny Bedolla Galvan](https://github.com/GalvanLuis) (<gruisu93@gmail.com>)
 
-> 1-2-3-team/Distributed-Computing-Project is licensed under the MIT License
+### 1-2-3-team/Distributed-Computing-Project is licensed under the MIT License see [LICENSE](https://github.com/1-2-3-team/Distributed-Computing-Project/blob/main/LICENSE) for details
 
 
 
