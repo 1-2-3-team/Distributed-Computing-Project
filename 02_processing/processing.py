@@ -72,10 +72,9 @@ y = np.array([spositive, wpositive, positive,negative, wnegative, snegative, neu
 labels = ['Strongly Positive', 'Weakly Positive','Positive', 'Neutral', 'Negative', 'Weakly Negative', 'Strongly Negative']
 sizes = [spositive, wpositive, positive, neutral, negative, wnegative, snegative]
 fig, ax = plt.subplots()
-theme = plt.get_cmap('bwr')
 ax.set_prop_cycle(color = ['blue','cyan', 'green', 'grey', 'yellow', 'orange', 'red'])
 box = ax.get_position()
-explode = [0, 0, 0, 0.2, 0, 0, 0]
+explode = [0, 0, 0, 0.4, 0, 0, 0]
 ax.set_position([box.x0, box.y0, box.width * 1.3, box.height])
 _, _, autotexts = ax.pie(
     sizes, autopct=autopct_generator(7), startangle=90, explode=explode, radius=1.8 * 1000)
@@ -94,8 +93,8 @@ plt.legend(
 #tant = ax.annotate("Results are given by taking a sample of 1000 tweets each 30 minutes a day.", xy=(-0.5, -1), xytext=(30,-10))
 #ax.add_artist(tant)
 at = AnchoredText(
-    "Results are given by taking a sample of 1000 tweets each 30 minutes a day.", prop=dict(size=8), frameon=False, loc='lower left')
-at.patch.set_boxstyle("round,pad=0.,rounding_size=0.2")
+    "Results are given by taking a sample of 1000 tweets each 30 minutes a day.", prop=dict(size=8), frameon=False, loc='best')
+at.patch.set_boxstyle(round,pad=0.,rounding_size=0.2)
 ax.add_artist(at)
 ax.set_title('Tweets analyzed for ' + searchTerm + ' on ' + date_time_stamp)
 ax.figure.savefig('/data/team5/chart.png')
